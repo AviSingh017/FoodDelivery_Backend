@@ -11,7 +11,7 @@ const {auth} = require("./middleware/auth");
 app.use(express.json());
 
 app.use("/", RestaurantRoute);
-app.use(auth);
+// app.use(auth);
 app.use("/", UserRoute);
 app.use("/", OrderRoute);
 
